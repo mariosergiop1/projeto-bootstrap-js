@@ -54,15 +54,18 @@ const valida = () => {
     let email = document.getElementById("email").value;
     let senha = document.getElementById("senha").value;
 
-	if(email === 'mariosergio@gmail.com' && senha === '123'){
-		alert('Campos validos');
-		location.href = 'index.jsp';
+	if(email === "mariosergio@gmail.com" && senha === "123"){
+		location.href = "index.jsp";
 		}
     
-    else if(email === '' && senha === ''){
+	else if(email === '' && senha === ''){
 	    alert('Campos obrigatórios não preenchidos!');
 	    //window.history.back('http://localhost:8080/agenda-acme/login.jsp');
     }
+
+	else if(email != "mariosergio@gmail.com" | senha != "123"){
+		alert('Login ou senha incorretos!');
+		}
   }
 </script>
 
