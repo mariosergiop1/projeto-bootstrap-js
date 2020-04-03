@@ -43,7 +43,7 @@ public class EmpresasImpl implements Empresas {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
+	
 	@Override
 	public void save(Empresa empresa) throws Exception {
 		this.factory = emf.createEntityManager();
@@ -62,5 +62,4 @@ public class EmpresasImpl implements Empresas {
 			this.factory.close();
 		}
 	}
-
 }
